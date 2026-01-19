@@ -119,7 +119,7 @@ VLC
 
 Acceder a:
 
-http://IP_DEL_SERVIDOR:8000
+http://172.30.16.133:8000
 
 En la sección Mountpoints debe aparecer tu radio:
 Código
