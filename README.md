@@ -107,7 +107,7 @@ http://172.30.16.133:8000/eug
 Ejemplo:
 
 
-http://172.30.16.133:8000/eugcasdes
+http://172.30.16.133:8000/eug
 
 VLC
 
