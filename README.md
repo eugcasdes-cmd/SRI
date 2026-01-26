@@ -8,6 +8,11 @@
 En el servidor (Icecast)
 
     Icecast2 instalado y funcionando.
+    Haciendo un:
+   
+    ```sudo apt update```
+   
+    ```sudo apt install icecast2```
 
     Puerto 8000/TCP abierto en UFW.
 
@@ -16,7 +21,10 @@ En el servidor (Icecast)
 En la máquina DJ
 
     Mixxx instalado.
-
+    Haciendo:
+    add-apt-repository ppa:mixxx/mixxx
+    sudo apt update
+    sudo apt install mixxx
     Sonido funcionando correctamente.
 
     Conectividad con el servidor Icecast (ping a la IP).
@@ -26,7 +34,7 @@ En la máquina DJ
 El archivo principal es:
 
 
-/etc/icecast2/icecast.xml
+**/etc/icecast2/icecast.xml**
 
 Los parámetros importantes son:
 
@@ -68,7 +76,7 @@ Contraseña	la definida en Icecast
 
 Ejemplo de mountpoint:
 
-/eug
+\*/eug*
 
 3.2 Codificación
 
@@ -107,7 +115,7 @@ http://172.30.16.133:8000/eug
 Ejemplo:
 
 
-http://172.30.16.133:8000/eug
+\*http://172.30.16.133:8000/eug*
 
 VLC
 
