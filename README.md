@@ -31,21 +31,21 @@ El archivo principal es:
 Los parámetros importantes son:
 
 
-<authentication>
+*<authentication>
     <source-password>sourcepassword</source-password>
     <relay-password>relaypassword</relay-password>
     <admin-password>adminpassword</admin-password>
-</authentication>
+</authentication>*
 
 Reiniciar Icecast tras cualquier cambio:
 
 
-sudo systemctl restart icecast2
+```sudo systemctl restart icecast2```
 
 Comprobar que está activo:
 
 
-systemctl status icecast2
+```systemctl status icecast2```
 
 Acceso web:
 
