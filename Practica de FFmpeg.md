@@ -27,7 +27,7 @@ Para la práctica se utiliza el archivo:
 big-buck-bunny-1080p-30sec.mp4
 ```
 
-Este vídeo se descarga desde la plataforma indicada por el profesor (Aules o enlace directo).
+El video lo he descargado desde Aules.
 
 ---
 
@@ -92,6 +92,7 @@ Esto indica:
 ## 5. Recodificación a H.264 y H.265 con bitrate fijo
 
 ### H.264 a 2 Mbps
+<img width="603" height="529" alt="h264" src="https://github.com/user-attachments/assets/22f9b179-6390-452c-a244-9303d5df8ef4" />
 
 ```bash
 ffmpeg -i big-buck-bunny-1080p-30sec.mp4 -c:v libx264 -b:v 2M -c:a copy h264_2mbps.mp4
@@ -106,6 +107,7 @@ Resultados:
 ---
 
 ### H.265 a 2 Mbps
+<img width="607" height="576" alt="h265" src="https://github.com/user-attachments/assets/b13ada96-3250-4379-8a56-a73bb066ff5e" />
 
 ```bash
 ffmpeg -i big-buck-bunny-1080p-30sec.mp4 -c:v libx265 -b:v 2M -c:a copy h265_2mbps.mp4
@@ -120,6 +122,8 @@ Resultados:
 ---
 
 ## 6. Comparación visual entre H.264 y H.265
+
+
 
 ### ¿Cuál presenta más artefactos?
 
