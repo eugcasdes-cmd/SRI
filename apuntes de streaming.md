@@ -166,21 +166,84 @@ Peso = Bitrate × Tiempo
 
 ---
 
-## 10. Vídeo
+## ### 10. Vídeo
 
-### Contenedor
+#### Contenedor
+Un contenedor agrupa varios elementos dentro de un único archivo.
+
 Incluye:
 - Pistas de vídeo
 - Pistas de audio
 - Subtítulos
 - Metadatos
-Ejemplos: MP4, MKV, MOV.
 
-### Cálculo RAW
+Ejemplos:
+- **MP4** → vídeo H.264, audio AAC, subtítulos SRT.
+- **MKV** → vídeo H.265, varios audios, múltiples subtítulos, capítulos.
+- **MOV** → vídeo ProRes, audio PCM, metadatos de cámara.
+
+---
+
+#### Cálculo RAW (sin compresión)
+**Fórmula:**
+```
 Peso = (Ancho × Alto) × Profundidad × FPS × Tiempo
+```
 
-### Bitrate (con códec)
+**Ejemplo 1**
+- Resolución: 1920×1080  
+- Profundidad: 24 bits (3 bytes)  
+- FPS: 30  
+- Tiempo: 10 s  
+
+Cálculo:
+```
+(1920 × 1080) × 3 × 30 × 10 = 1.866.240.000 bytes ≈ 1,86 GB
+```
+
+**Ejemplo 2**
+- Resolución: 3840×2160  
+- Profundidad: 24 bits  
+- FPS: 60  
+- Tiempo: 5 s  
+
+Cálculo:
+```
+(3840 × 2160) × 3 × 60 × 5 ≈ 7,46 GB
+```
+
+---
+
+#### Cálculo con Bitrate (con códec)
+**Fórmula:**
+```
 Peso = Bitrate × Tiempo
+```
+
+**Ejemplo 1**
+- Bitrate: 8 Mbps  
+- Tiempo: 120 s  
+
+```
+8.000.000 × 120 = 960.000.000 bits ≈ 120 MB
+```
+
+**Ejemplo 2**
+- Bitrate: 25 Mbps  
+- Tiempo: 600 s  
+
+```
+25.000.000 × 600 = 15.000.000.000 bits ≈ 1,87 GB
+```
+
+**Ejemplo 3**
+- Bitrate: 2 Mbps  
+- Tiempo: 30 s  
+
+```
+2.000.000 × 30 = 60.000.000 bits ≈ 7,5 MB
+```
+
 
 ### Bitrates recomendados
 Resolución | Calidad    | Mínimo     | Recomendado
