@@ -166,7 +166,7 @@ Peso = Bitrate × Tiempo
 
 ---
 
-## ### 10. Vídeo
+## 10. Vídeo
 
 #### Contenedor
 Un contenedor agrupa varios elementos dentro de un único archivo.
@@ -325,7 +325,7 @@ ffmpeg -i video.mp4 -c:v libx265 -b:v 2M -c:a copy h265.mp4
 
 ---
 
-## 15. Ejercicios típicos de examen
+## 15. Ejercicios típicos
 
 ### Audio
 bitrate_raw = frecuencia × bits × canales  
