@@ -286,7 +286,7 @@ apt install mixxx
 
 ### Configuración
 - Tipo: Icecast2  
-- Montaje: /hectorsri  
+- Montaje: /erc01
 - Servidor: 172.30.16.101  
 - Puerto: 8000  
 - Usuario: source  
