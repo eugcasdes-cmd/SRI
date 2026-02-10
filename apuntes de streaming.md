@@ -266,15 +266,18 @@ Resolución | Calidad    | Mínimo     | Recomendado
 - Gestión de oyentes.
 - Web admin.
 
-### Instalación
-apt update  
-apt install icecast2
+###Instalación
 
-Configurar:
-- source-password  
-- admin-password  
-- puerto 8000  
+    Icecast2 instalado y funcionando.
+    Haciendo un:
+   
+    ```sudo apt update```
+   
+    ```sudo apt install icecast2```
 
+    Puerto 8000/TCP abierto en UFW.
+
+    Archivo de configuración /etc/icecast2/icecast.xml con la contraseña del usuario source.
 ---
 
 ## 12. Mixxx (Emisor)
